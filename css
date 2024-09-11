@@ -1,569 +1,1458 @@
-    <head>
-        <title>Автоматизированные системы управления технологическими процессами в теплоэнергетике | Инcтитут образовательных технологий | ФГБОУ ВО ИжГТУ имени М.Т. Калашникова</title>
-        <meta property="og:title" content="«Инcтитут образовательных технологий»" />
-		<meta property="og:url" content="https://distant.istu.ru" />
-		<meta property="og:type" content="website" />
-		<meta property="og:site_name" content="«Инcтитут образовательных технологий» ФГБОУ ВО ИжГТУ имени М.Т. Калашникова" />
-		<meta property="og:image" content="https://istu.ru/storage/images/no-image-blue.jpg" />
-
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="image_src" href="/favicon.ico"/>
-        <link rel="icon" href="/favicon.ico" type="image/x-icon">
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
-
-        <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Cuprum:regular,italic,700,700italic&amp;subset=cyrillic,latin"/>
-		
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-                        
-        <meta name="description" content="">
-        
-        <script type="text/javascript" src="/js/jquery-1.11.1.min.js"></script>
-        
-        <script type="text/javascript" src="/js/jx.js"></script>
-        <script type="text/javascript" src="/js/main.js"></script>
-		<script type="text/javascript" src="/ssv/ajax.form.js"></script>
-
-	    <link type="text/css" rel="stylesheet" href="/css/common.css">          
-        <link type="text/css" rel="stylesheet" href="/css/fonts/font_awesome/font_awesome.css">
-       
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
-   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-   m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-   (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-   ym(55375783, "init", {
-        clickmap:true,
-        trackLinks:true,
-        accurateTrackBounce:true,
-        webvisor:true
-   });
-</script>
-<noscript><div><img src="https://mc.yandex.ru/watch/55375783" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
-    	
-	</head>
-    <body>
-	
-	<div class="site-header">
-		<div class="container">
-			<div class="row">
-				<div id="header-logo" class="col-4 col-sm-2">
-				<a href="/"></a>
-				</div>
-				<div id="header-title" class="col-8 col-sm-10">
-				<div><a href="https://istu.ru">ФГБОУ ВО ИжГТУ имени М.Т. Калашникова</a></div>
-				<div id="iot-title"><a href="/">Дополнительное профессиональное образование</a></div>
-				
-				</div>
-			</div>
-        </div>
-	</div>
-        <div class="bg-box blue">
-            <div class="container">
-			<div class="row">
-                <div class="menu-box">
-                    <ul class="main-menu-items">   
-                        
-                <li class="menu-border-right left">
-                    <a class="color-white" href="/">Об институте</a>
-                </li>
-            
-                <li class="menu-border-right left">
-                    <a class="color-white" href="/page/PP/">Профессиональная переподготовка</a>
-                </li>
-            
-                <li class="menu-border-right left">
-                    <a class="color-white" href="/page/PK/">Повышение квалификации</a>
-                </li>
-            
-                <li class="menu-border-right left">
-                    <a class="color-white" href="/document/">Документы</a>
-                </li>
-            
-                <li class="menu-border-right left">
-                    <a class="color-white" href="/page/contacts/">Контакты</a>
-                </li>
-           
-                        <div class="clear"></div>
-                    </ul>
-                </div>
-			</div>
-            </div>
-        </div>
-<style>
-#b1{
-	color:#fff;
-	background-color: #133692;
-	background-image: url(bg1.png);
-	background-size: cover;
-    background-position: 0% 0px;
-	font-size:18pt;
-	padding: 15px 0 25px;
+body {
+    background: #fff;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    font-family: Cuprum, sans-serif;
+    font-size: 16px;
 }
-
-#b1 h2{
-	text-transform: uppercase;
-	font-size:32pt;
-	margin:20px 0;
+h1,h2,h3{
+    font-family: Cuprum, "Open Sans", sans-serif;
 }
-#b12 div{
-	border-left:1px solid white;
+h1{
+    font-size: 2rem;
 }
-
-.but, .but:hover{
-	color:#fff;
-	display:inline-block;
-	padding:7px 20px;
-	background-color: #9100ff;
-	border-radius:10px;
-	margin-top: 20px;
-}
-
-#b2{
-	color:#000;
-	background-color: #eee;
-	font-size:18pt;
-	padding: 25px 0 30px;
-}
-#b2 h3{
-	color:#9100ff;
-}
-#b2 .col .row{
-	margin: 10px 0;
-}
-
-#b3{
-	padding: 25px 0 30px;
-}
-#b3 h2{
-	text-transform: uppercase;
-	font-size:32pt;
-	margin:20px 0;
-	text-align:center;
-}
-
-#b4{
-	color:#000;
-	background-color: #eee;
-	background-image: url(bg2.png);
-	background-size: cover;
-    background-position: 0% 0px;
-	font-size:18pt;
-	padding: 15px 0 25px;
-}
-#b4 h2{
-	text-transform: uppercase;
-	font-size:32pt;
-	margin:20px 0;
-	text-align:center;
-}
-#b4 .item{
-	background-color: #fff;
-	border-radius:10px;
-	margin: 0 0 10px;
-    min-height: 2em;
-}
-#b4 .item2{
-	background-color: #fff;
-	border-radius:10px;
-	margin: 10px;
-}
-#b4 .item2 div{
-	color: #9100ff;
-	font-size:38pt;
-}
-
-#b5{
-	color:#fff;
-	background-color: #133692;
-	background-image: url(https://istu.ru/images/header_back.png);
-	background-size: cover;
-    background-position: 0% 0px;
-	font-size:18pt;
-	padding: 15px 0 25px;
-}
-#b5 h2{
-	text-transform: uppercase;
-	font-size:32pt;
-	margin:20px 0;
-	text-align:center;
-}
-#b5 h3{
-	border-top:1px solid white;
-	padding-right:50px;
-}
-#b5 .accord{
-	max-height:0px;
-	position:relative;
-	transition: all 1s ease-out;
-}
-#b5 .accord::before{
-	content: url("close.svg");
-	background-color:#9000ff;
-	border-radius:17px;
-	width: 34px;
-	height: 34px;
-	position:absolute;
-	right:2px;
-	top: -35px;
-	padding:2px;
-}
-#b5 .accord:hover::before, #b5 .accord-open:hover::before{
-	background-color:#2344af;
-}
-#b5 .accord li{
-	transform:scaleY(0);
-	position:relative;
-}
-#b5 .accord-open{
-	max-height:500px;
-	position:relative;
-	transition: all 1s ease-out;
-}
-#b5 .accord-open::before{
-	content: url("open.svg");
-	background-color:#9000ff;
-	border-radius:17px;
-	width: 34px;
-	height: 34px;
-	position:absolute;
-	padding:2px;
-	right:2px;
-	top: -35px;
-}
-#b5 .accord-open li{
-	display:list-item;
-}
-#b51{
-	color:#fff;
-	background-color: rgba(230, 230, 230, 0.1);
-	padding: 25px 0 30px;
-}
-#b51 h2{
-	text-transform: uppercase;
-	font-size:32pt;
-	margin:20px 0;
-	text-align:center;
-}
-#b5 .item::before{
-	content: url("hands.png");
-	margin-right:20px;
-	vertical-align: middle;
-}
-#b5 .item.diplom::before{
-	content: url("diplom.png");
-}
-#b5 .item.teacher::before{
-	content: url("teacher.png");	
-}
-#b5 .item.distant::before{
-	content: url("distant.png");	
-}
-
-#b6{
-}
-#b6 h2{
-	text-transform: uppercase;
-	font-size:32pt;
-	margin:20px 0;
-	text-align:center;
-}
-.otzv{
-	position:relative;
+table img{
 	max-width:100%;
-	justify-content: center;
 }
-.otzv .col{
-	background-color:#f4f4f4;
-	margin:30px;
-	border-radius:10px;
-	max-width: 50%;
+.red{
+	color: #FFF;
+	cursor: default;
+    background: #FD3223;
+	padding: 5px;
 }
-.otzv .col:nth-child(n + 4){
-	width:0px;
-	display:none;
-}
-#b6 h3{
-	color:#5b00f7;
-	margin:20px 0;
-}
-#otzvleft{
-	position:absolute;
-	left:0;
-	width:20%;
-	height:100%;
-	background-color: rgba(255, 255, 255, 0.5);
-	padding:20px;
-}
-#otzvright{
-	position:absolute;
-	right:0;
-	width:20%;
-	height:100%;
-	background-color: rgba(255, 255, 255, 0.5);
-	padding:20px;
+.clear {
+    clear: both;
+    height: 0;
+    visibility: hidden;
 }
 
-#b7{
-	color:#000;
-	background-color: #eee;
-	background-image: url(bg2.png);
-	background-size: cover;
-    background-position: 0% 0px;
-	font-size:18pt;
-	padding: 15px 0 25px;
+.left {
+    float: left;
 }
-#b7 h2{
+
+.right {
+    float: right;
+}
+.site-header{
+	background: #164ACF url(https://istu.ru/images/header_back.png) top center;
+    background-position-y: 33px;
+    color: #FFF;
+}
+.site-header{
+	padding: 10px 80px;
+}
+.bg-box {
+    width: 100%;
+    margin: 0 auto;
+}
+.shedule div:nth-child(8n+1),
+.shedule div:nth-child(8n+2),
+.shedule div:nth-child(8n+3),
+.shedule div:nth-child(8n+4)
+{
+	background:#eee;
+}
+.content-box {
+	-max-width: 1220px;
+	max-width: 1750px;
+    margin: 0 auto;
+}
+.catalog-content-box{
+    padding-left: 340px;
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+#header-logo{}
+#header-logo a{
+	display: block;
+    width: 148px;
+    height: 140px;
+    background: url(https://istu.ru/images/svg/istu-logo.svg) no-repeat;
+    background-size: cover;
+}
+#header-title{
+	padding: 30px 0;
 	text-transform: uppercase;
-	font-size:32pt;
-	margin:20px 0;
 }
-#b7 input{
-	margin: 10px 0;
-}
-
-#b8{
+#header-title a{
 	color:#fff;
-	background-color: #0d2ea1;
-	font-size:18pt;
-	padding: 15px 0 25px;
+	text-decoration: none;
 }
-#b8 h2{
-	text-transform: uppercase;
-	font-size:32pt;
-	margin:20px 0;
+#iot-title{
+	font-size: 30px;
 }
-#b8 #map{
-	max-width:60%;
+
+.footer {
+    padding: 40px 10px;
 }
-</style>
-<script>
-$( document ).ready(function() {
-	
-$(document).on("click", ".accord-open", function() {
-  $(this).removeClass( "accord-open" ).addClass( "accord" );
-} );
-$(document).on("click", ".accord", function() {
-  $(this).removeClass( "accord" ).addClass( "accord-open" );
-} );
-$(document).on("click", "#otzvright", function() {
-	$('.otzv').prepend($('.otzv .col').last());
-} );
-$(document).on("click", "#otzvleft", function() {
-	$('#otzvleft').before($('.otzv .col').first());
-} );
 
-});
-</script>
-<div id=b1>
-	<div class="container">
-  <div class="row">
-    <div class="col col-lg-7">
-      <div>Программа повышения квалификации</div>
-	  <h2>Наладчик станков с ЧПУ</h2>
-	  <a href='#form' class='but'>Записаться</a>
-    </div>
-    <!--<div class="col col-lg-5 text-right">
-      <img src='nscpu-logo.png'>
-    </div>-->
-  </div>
-  <div id=b12 class="row">
-    <div class="col col-lg-3">
-      <p>Форма обучения</p>
-	  <p>Очная</p>
-    </div>
-    <div class="col col-lg-3">
-      <p>Длительность обучения</p>
-	  <p>72 часов 5 недель</p>
-    </div>
-	<div class="col col-lg-3">
-      <p>Стоимость</p>
-	  <p>22&nbsp;000&nbsp;р<sup>*</sup><br>*при наборе группы от 7 человек</p>
-    </div>
-    <div class="col col-lg-3">
-      <p>Документ</p>
-	  <p>Удостоверение о повышении квалификации</p>
-    </div>
-  </div>
-	</div>
-</div>
-<div id=b2>
-	<div class="container">
-	<h2>Менеджер программы</h2>
+.silver{
+    background: #eee;
+    border-color: #eee !important;
+}
 
-  <div class="row">
-    <div class="col col-lg-2 align-self-center">
-      <img src='WLA-round.png' width=147>
-    </div>
-	<div class="col col-lg-5 align-self-center">
-      <h3>Шиляев Сергей Александрович</h3>
-	  <p>Д.т.н., доцент, зав.кафедрой «Конструкторско-технологическая подготовка машиностроительных производств»</p>
-    </div>
-    <div class="col col-lg-5 align-self-center">
-      <div class="row">
-		<div class="col col-lg-2"><img src='phone.png'></div>
-		<div class="col col-lg-10">Тел: 8 (3412)77-60-55 доб.51-54</div>
-	  </div>
-	  <div class="row">
-		<div class="col col-lg-2"><img src='email.png'></div>
-		<div class="col col-lg-10">e-mail: eedu@istu.ru</div>
-	  </div>
-    </div>
-  </div>
-	</div>
-</div>
-<div id=b3>
-	<div class="container">
-	<h2>О программе</h2>
-	<p><big>Программа повышения квалификации направлена на формирование новых компетенций или качественное их изменение в области автоматизации производственных процессов станков с  числовым программным управлением.</big></p>
-<p><big>Программа является преемственной к основной образовательной программе высшего образования направления подготовки 15.03.05 – Конструкторско-технологическое обеспечение машиностроительных производств.</big></p>
-<big><p>Программа разработана на основании и в соответствии с профессиональными стандартами:</big></p>
-<li><big> 40.083 «Специалист по проектированию технологических процессов автоматизированного производства», утвержденным приказом Минтруда России от 27.04.2023 г. № 414н;</big></li>
-<li><big> 40.013 «Специалист по разработке технологий и программ для металлорежущих станков с числовым программным управлением», утвержденным приказом Минтруда России от 14.07.2021 №472н.</big></li>
-<ul></p>
-	<!--<div class='text-center'><img src='video.png'></div>-->
-	</div>
-</div>
-<div id=b4>
-	<div class="container">
-	<h2>Для кого этот курс</h2>
-	<div class="row">
-		<div class="col col-lg-1 text-center"><img src='check-in-circle.png'>
-		</div>
-		<div class="col col-lg-11 item">Для лиц имеющих среднее профессиональное  и (или) высшее образование.
-		</div>
-		<div class="col col-lg-1 text-center"><img src='check-in-circle.png'>
-		</div>
-		<div class="col col-lg-11 item">Станочников широкого профиля, операторов и наладчиков станков с ЧПУ.
-		</div>
-		<div class="col col-lg-1 text-center"><img src='check-in-circle.png'>
-		</div>
-		<div class="col col-lg-11 item">Руководителей и специалистов в области конструкторско-технологического обеспечения машиностроительных производств.
-		</div><div class="col col-lg-1 text-center"><img src='check-in-circle.png'>
-		</div>
-		<div class="col col-lg-11 item">Руководителей и работников образовательных организаций.
-		</div>
-	</div>
-	<h2>Вы научитесь</h2>
-	<div class="row">
-		<div class="col item2"><div>1.</div>Создавать и редактировать 3D модели деталей и заготовок для автоматизированной разработки технологий изготовления деталей на станках с ЧПУ.
-		</div>
-		<div class="col item2"><div>2.</div>Разрабатывать и отлаживать  управляющие программы для станков с ЧПУ различными способами.
-		</div>
-		<div class="w-100"></div>
-		<div class="col item2"><div>3.</div>Выполнять размерную настройку и наладку станка с ЧПУ на изготовление деталей.
-		</div>
-		<div class="w-100"></div>
-		<div class="col item2"><div>4.</div>Выполнять обработку  деталей на станке с ЧПУ.
-		</div>
-	</div>
-	</div>
-</div>
-<div id=b5>
-	<div class="container">
-	<h2>Программа курса</h2>
-	<h3>Модуль 1. Общие сведения об обработке на станках с ЧПУ</h3>
-	<ul class="accord-open">
-	<li>Тема 1.1. Место станков с ЧПУ в автоматизированном производстве</li>
-	<li>Тема 1.2. Основные конструкции механизмов и узлов и характеристики станков с ЧПУ</li>
-	<li>Тема 1.3. Современные режущий и вспомогательный инструменты, приспособления для станков с ЧПУ</li>
-	<li>Тема 1.4. Режимы обработки на станках с ЧПУ</li>
-	<li>Тема 1.5. Безопасные приёмы работы на станках с ЧПУ</li>
-	<li>Тема 1.6. Особенности построения технологических процессов обработки деталей на станках с ЧПУ</li>
-	</ul>
-	<h3>Модуль 2. Разработка УП в кодах ISO-7bit(для Siemens- и Fanuc-подобных систем ЧПУ станками)</h3>
-	<ul class="accord">
-	<li>Тема 2.1. Системы координат (СК) станков с ЧПУ</li>
-	<li>Тема 2.2. Параметры траектории движения инструмента</li>
-	<li>Тема 2.3. Структура УП, классификация функций</li>
-	<li>Тема 2.4. Программирование токарной и фрезерной обработки</li>
-	</ul>
-	<h3>Модуль 3. Основы эффективного программирования</h3>
-	<ul class="accord">
-	<li>Тема 3.1. Использование подпрограмм</li>
-	<li>Тема 3.2. Постоянные циклы системы ЧПУ Fanuc-0i</li>
-	<li>Тема 3.3. Параметрическое программирование (Fanuc-0iMD)</li>
-	</ul>
-	<h3>Модуль 4. Программирование с использование систем цехового программирования и компьютерных редакторов УП</h3>
-	<ul class="accord">
-	<li>Тема 4.1. Применение ЧПУ-калькулятора CimcoEdit</li>
-	<li>Тема 4.2. Использование Siemens SinuTrain</li>
-	</ul>
-	</div>
-	<div id=b51>
-	<div class="container">
-	<h2>Преимущества программы</h2>
-		<div class="row">
-		<div class="col item">Практика  на современном оборудовании
-		</div>
-		<div class="col item">Полезные знакомства
 
-		</div>
-		<div class="w-100"></div>
-		<div class="col item diplom">Удостоверение о повышении квалификации
-		</div>
-		<div class="col item teacher">Преподаватели-эксперты
-		</div>
-	</div>
-	</div>
-	</div>
-	<div class="container">
-	<h2>Эксперты программы</h2><div class="row">
-		<div class="col text-center"><img src='WLA-round.png'><br>
-		<h4 class='but'>Шиляев Сергей Александрович</h4>
-		<div>д.т.н., доцент, зав.кафедрой «Конструкторско-технологическая подготовка машиностроительных производств» ,  Почетный работник сферы образования Российской Федерации.</div>
-		</div>
-		<div class="col text-center"><img src='BAG-round.png'><br>
-		<h4 class='but'>Бажин Алексей Гертрудович</h4>
-		<div>ст.преподаватель кафедры «Конструкторско-технологическая подготовка машиностроительных производств», эксперт чемпионатов «Молодые профессионалы (Ворлдскиллс Россия), сертифицированный специалист по программным продуктам  фирмы Delcam, Siemens NX (CAD/CAM)</div>
-		</div>
-	</div>
-<!--	<h2>Партнеры программы</h2><div class="row">
-	<div class="col col-lg-4"><img src='promo.png'></div>
-	<div class="col col-lg-4"><img src='promo.png'></div>
-	<div class="col col-lg-4"><img src='promo.png'></div>
-	<div class="w-100"></div>
-	<div class="col col-lg-4"><img src='promo.png'></div>
-	<div class="col col-lg-4"><img src='promo.png'></div>
-	<div class="col col-lg-4"><img src='promo.png'></div>
-	</div>-->
-	</div>
-</div>
-<!--<div id=b6>
-	<div class="container">
-	<h2>Отзывы слушателей</h2>
-	</div>
-	<div class="row otzv">
-	<div class="col"><h3>Андрей С.</h3>
-	<p>Здравствуйте! Все понравилось, узнали что то новое, полезная и нужная информация для дальнейшего развития.</p>
-	</div>
-	<div class="col"><h3>Константин Э.</h3>
-	<p>Здравствуйте, хорошо продуманная, полезная программа обучения. Хороший старт для дальнейшего изучения данного направления.</p></div>
-	<div class="col"><h3>Максим Ц.</h3>
-	<p>Добрый день. Программа обучения была интересная, быстрая и качественная. Понравились практические занятия, хотелось бы больше времени на практику. У меня получилось поменять кардинально сферу деятельности и Ваша учеба создала хорошее основание для дальнейшей информации. Успехов и удачи с новыми группами.</p></div>
-	<div id=otzvleft class='justify-content-center d-flex align-items-center'><img src='aleft.png'></div>
-	<div id=otzvright class='justify-content-center d-flex align-items-center'><img class='center-block' src='aright.png'></div>
-	</div>
-</div>-->
-<div id=b7>
-	<div class="container">
-	<div class='row'>
-	<div class='col col-lg-3'><h2 id=form>Подать заявку</h2></div>
-	<div class='col col-lg-9'><form class="ajform">
-	<input class="form-control" name="name" type="text" placeholder="Имя" />
-	<input class="form-control" name="lastname" type="text" placeholder="Фамилия" />
-	<div class="form-row">
-	<div class='col'><input class="form-control" name="phone" type="text" placeholder="Телефон" /></div>
-	<div class='col'><input class="form-control" name="email" type="text" placeholder="E-mail" /></div>
-	</div>
-	<input class="btn btn-primary position-relative but" type="submit" value="Отправить" />
-	</form></div>
-	</div>
-	</div>
-</div>
+.search-cart-block{
+    float: right;
+    padding: 15px 10px 0px 30px;
+    box-sizing: border-box;
+}
+.cart-button{
+    padding: 30px 5px;
+}
+.cart-button-right{
+    background-color: #1e3b87;
+    color: #ffffff;
+    padding: 15px;
+    text-decoration: none;
+    border-radius:  0 2px 2px 0;
+}
+.cart-button-left{
+    text-decoration: none;
+    background-color: #1e3b87;
+    color: #ffffff;
+    padding: 15px 22px;
+    border-right: 1px solid #1b3579;
+    border-radius: 2px 0 0 2px;
+    background-image: url("/images/cart.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.service-image{
+    padding: 5px; 
+    width: 160px; 
+    text-align: center;  
+}
+.service-block{
+    margin:10px;
+}
+.service-text-block{
+    margin: 5px 10px;
+}
+.service-text{
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.service-download{
+    color: #1e3b87;
+    text-decoration: none;
+}
+.service-download:hover{
+    text-decoration: underline;
+}
+.search-block{
+    padding: 15px;
+    height: 49px;
+    display: flex;
+}
+
+.search-block-left{
+    width: 325px;
+}
+.search-block-left input{
+    height: 45px;
+    width: 100%;
+    border: 1px solid #d7d7d7;
+}
+.search-block-right{
+    display: block;
+    margin-left: -1px;
+    padding:15px 24px;
+    border-top: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    background-image: url("/images/search.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.menu-box{
+    text-align: center;
+    background-color: #1e3b87;
+    line-height: 100%;
+    font-weight: bold;
+}
+
+.menu-box ul {
+    list-style: none;
+    /* padding: 0; */
+    margin: 0;
+}
+.menu-box ul li {
+    display: block;
+    font-size: 13px;
+}
+
+.menu-box a {
+    float: left;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.menu-category-block{
+    height: 56px;
+    margin-left: 62px;
+    background-color: #1b3579;
+}
+.color-white{
+    color: #fff;
+    padding: 20px 25px;
+}
+.service-title{
+    font-size: 19px;
+}
+.event-image{
+    max-width:100%;
+    margin: 5px;
+}
+.event-text{
+    margin: 5px;
+}
+.menu-nav-list {
+    float: left;
+    width: 100%;
+    border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+    background-color: #fff;
+    position: relative;
+}
+
+.category-menu{
+    display: block;
+}
+.menu-fa-bar{
+    height: 56px;
+    width: 56px;
+    padding: 0px !important;
+    background-image: url("/images/menu.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #152a61;
+}
+.menu-fa-bar:before{
+    margin-top: 20px;
+}
+.menu-border-right{
+    border-right: 1px solid #4b629f;
+}
+.menu-border-right:hover{
+    background-color: #d7d3f1;
+}
+
+.product-title{
+    font-size: 30px;
+    padding: 10px 20px;
+}
+.product-text{
+    line-height: 1.5;
+    text-indent: 1.5em;
+    padding: 10px;
+    font-size: 16px;
+}
+.image-block{
+    text-decoration: none;
+    border: 1px solid #d7d7d7;
+    height: 350px;
+    width: 270px;
+    margin: 10px 15px;
+}
+.recomm-image{
+    text-align: center;
+}
+.recomm-image-title{
+    text-align: center;
+    font-size: 14px;
+    color: black;
+}
+
+.about-block{
+    padding-top: 30px;
+    padding: 30px 10px 10px 10px;
+    margin: 10px;
+}
+.left-about-block{
+    margin: 40px 10px 10px 10px;
+}
+.banner{
+    width: 100%;
+    display:block;
+    text-align: center;
+}
+.about-title{
+    font-size: 32px;
+}
+.about-text{
+    font-size: 15px;
+    text-indent: 2.5em;
+    max-width: 100%;
+    margin-top: 20px;
+}
+.about-logo{
+    margin-right: 50px;
+}
+.about-partners{
+    margin-top: 0px;
+    font-size: 18px;
+    width: 100%;
+}
+.arrow-down{
+    color: white;
+}
+.arrow-down:after{
+    content: "\f107";
+    font-family: 'FontAwesome';
+    margin-left: 8px;
+}
+
+.line{
+    margin: 10px 20px;
+    width: 90px;
+    border: none;
+    background-color: #d7d7d7;
+    height: 1px;
+}
+
+.partners{
+    margin-top: 20px;
+    width:100%;
+    text-align: center;
+}
+.partner-logo{
+    width: 16%;
+}
+.gray{
+    background-color: #31353b;
+    color: white;
+}
+.blue{
+    background-color: #1e3b87;
+}
+
+.catalog-item{
+    width: 100%;
+    box-sizing: border-box;
+    padding:20px 15px 20px 15px;
+    color: black;
+}
+.catalog-item-info-block{
+    width: 50%;
+    padding-top: 25px;
+}
+.about-info-right-block-title{
+    font-size: 26px;
+}
+.about-info-right-block{
+    padding-top: 30px;
+    max-width: 300px;
+    min-width: 280px;
+    margin:5px;
+}
+.about-info-right-list{
+    font-size: 16px;
+    margin-top: 20px;
+    border-top: 2px solid #1e3b87;
+}
+.catalog-item-title{
+    font-size: 32px;
+}
+.catalog-item-image{
+    width:50%;
+}
+.catalog-item-block{
+    margin-top: 20px;
+    border:1px solid #d7d7d7;
+}
+.catalog-other-types-title{
+    margin-top: 20px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.catalog-other-types{
+    color: #1e3b87;
+}
+.catalog-other-types-top{
+    padding: 5px 0px;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+    color: #1e3b87;
+    border-bottom: 1px dashed #d7d7d7;
+}
+.catalog-other-types-top:hover{
+    color: black;
+}
+.catalog-item-info{
+    width:270px;
+    font-size: 14px;
+    margin-top:20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    border-top: 2px solid #1e3b87;
+}
+.catalog-item-info-buy{
+    padding: 5px 0px;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px dashed #d7d7d7;
+}
+.catalog-item-info-buy:hover{
+    color: #1e3b87;
+}
+.catalog-item-info-cell{
+    padding: 5px 0px;
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 1px dashed #d7d7d7;
+}
+.catalog-item-info-cell:hover{
+    color: #1e3b87;
+}
+
+.menu-info {
+    width: 100%;        
+    -border-bottom: 1px solid #d7d7d7;
+}
+.menu-info .path {
+    display: inline-block;
+}
+
+.path:hover {
+    
+}
+.menu-info ul {
+    margin: 10px;
+    display: block;
+    list-style-type: disc;
+    list-style-position: inside;
+}
+.menu-info li {
+    display: inline;
+}
+.menu-info a {
+    margin-right: 10px;
+    color: #1e3b87;
+    font-weight: bold;
+}
+.menu-info a:after {
+    content: "/";
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.form-block {
+    float: right;
+    width: 250px;
+    margin: 15px;
+    margin-left: 0;
+    color: #333;
+
+}
+.form-back-text{
+    padding-top: 13px;
+    font-size: 15px;
+    display: block;
+}
+.form-back-text a{
+    color: black;
+    text-decoration: none;
+}
+
+.form-block .form-block-inner {
+    padding: 15px;
+    border: 1px solid #d7d7d7;
+    border-radius: 2px 2px 0px 0px;
+}
+.form-block .actions {
+    background-color: #eee;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.form-block .input-text {
+    width: 100%;
+    margin-bottom: 15px;
+}
+.form-back{
+    width: 270px;
+    border: 1px solid #d7d7d7;
+    margin-left: -10px;
+    margin-bottom: 20px;
+}
+.form-back-icon{
+    width: 55px;
+    height: 67px;
+    text-align: center;
+    background-image:url("/images/file.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.block-title {
+    background: none;
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: inline-block;
+    position: relative;
+    /* margin-bottom: 20px; */
+    font-weight: bold;
+    border-bottom: 2px solid #1E3B87;
+    padding-bottom: 15px;
+}
+.black{
+    background: #31353b;
+}
+
+.button {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-size: 84.62%;
+    font-weight: bold;
+    line-height: 100%;
+    padding: 11px 15px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 2px;
+}
+
+.item-info-block{
+    
+}
+.service .item-info-block{
+    
+}
+.service-row{
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.item-info{
+    margin-left: 350px;
+    max-width: 50%;
+}
+.item-images{
+    max-width: 300px
+}
+
+.item-big-image{
+    border: 1px solid #d7d7d7;
+    padding: 5px 5px 0px 5px;
+}
+.image-slider{
+    padding-top: 10px;
+    max-width: 470px;
+}
+.image-slider-cell{
+    width: 83px;
+    height: 62px;
+    border: 1px solid #4b629f;
+    margin-right: 10px;
+}
+
+.image-slider-last-cell{
+    width: 85px;
+    height: 62px;
+    border: 1px solid #4b629f;
+}
+.item-info{
+    font-size: 14px;
+}
+.item-article{
+    font-size: 13px;
+}
+.item-title{
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d7d7d7;
+}
+.item-info-description{
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+.item-buttons-block {
+    width: 100%;
+    padding-top: 30px;
+}
+.border{
+    border: 1px solid #d7d7d7;
+}
+.cell-border{
+    border-right:1px solid #d7d7d7;
+}
+.shop-table{
+    display: table;
+    box-sizing: border-box;
+    margin-top: 20px;
+    width:100%;
+}
+.catalog-table{
+    display: table;
+    box-sizing: border-box;
+    margin-top: 20px;
+    width:100%;
+}
+
+.table-row{
+    display: table-row;
+    text-align: center;
+}
+
+.table-cell{
+    display: table-cell;
+    box-sizing: border-box;
+    vertical-align: middle;
+    border-left: 1px solid #d7d7d7;
+    border-top: 1px solid #d7d7d7;
+}
+.table-item-image{
+    width: 35%;
+}
+.table-item-name{
+    width: 30%;
+}
+.table-item-count {
+    max-width: 20%;
+    min-width: 110px;
+}
+.table-item-remove{
+    width: 25%;
+    border-right: 1px solid #d7d7d7;
+}
+.table-block{
+    overflow-x:scroll ;
+    margin-left:10px;
+}
+
+.table-catalog-item-image{
+    width: 20%;
+}
+.table-catalog-item-count{
+    min-width: 120px;
+}
+.table-catalog-item-add{
+    max-width: 160px;
+    min-width: 70px;
+    border-right: 1px solid #d7d7d7;
+}
+.table-last-item{
+    border-bottom: 1px solid #d7d7d7;
+}
+.bold{
+    font-weight: bold;
+}
+
+.table-buttons{
+    border-left: 1px solid #d7d7d7;
+    border-bottom: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+}
+.clear-cart-button{
+    margin: 10px;
+}
+.border-white{
+    display: inline-block;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #d7d7d7;
+    color: black;
+}
+.count-button{
+    width: 35px;
+    box-sizing: border-box;
+}
+.count-text-cell{
+    padding:7px 10px;
+    display: inline-block;
+}
+
+.add-to-cart-button{
+    margin: 10px;
+}
+.right-img{
+    margin: 7px 0 7px 7px;
+}
+.head-logo-block{
+    max-width: 100%;
+    display: inline-block;
+}
+
+.small-display{
+    display: inherit;
+}
+.remove-button{
+    text-decoration: none;
+    background-image: url("/images/remove.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.hidden-block{     
+    width: 100%;       
+    display: none;
+}
+.hidden-item {
+    font-weight: 300;
+    color: black;              
+    padding-left: 5px;
+    border-bottom: 1px solid #d7d7d7;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.podmenu_item:after{
+    color:black;
+    content: "\f105";      
+    margin-top:15px;      
+    font-family: 'FontAwesome';  
+    margin-left: 15px;
+}                
+
+ul.main-menu-items > li{
+    position: relative;
+    text-transform: uppercase;
+}
+ul.catalog-menu {
+    display: none;
+    position: absolute;
+    width: 200px;
+    top: 56px;
+    left: 0;
+    background-color: white;
+    border-left: 1px solid  #d7d7d7;
+    border-right: 1px solid  #d7d7d7;
+}
+ul.catalog-menu > li{
+    width: 100%;
+    border-bottom: 1px solid #d7d7d7;
+    display: block;
+    height: 56px;
+}
+ul.catalog-menu > li:hover{
+    background-color: #eeeeee;
+}
+ul.catalog-menu > li > a {
+    display: block;
+    padding: 20px;
+    color: black;
+    font-weight: 300;
+    text-decoration: none;
+}
+
+ul.main-menu-items > li:hover > ul.catalog-menu {
+    display: block;
+}
+
+ul.about-menu{
+    color:black;
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 56px;
+    left: 0;
+    background-color: white;
+    border-left: 1px solid  #d7d7d7;
+    border-right: 1px solid  #d7d7d7;
+}
+ul.about-menu > li{
+    width: 100%;
+    border-bottom: 1px solid #d7d7d7;
+    display: block;
+    height: 36px; 
+}
+
+ul.about-menu > li > a {
+    display: block;
+    padding: 10px;
+    color: black;
+    font-weight: 300;
+    text-decoration: none;
+}
+ul.catalog-menu > li:hover > ul.about-menu{
+    display: block;
+}
+
+
+.podcatalog-info{
+    background-color: white;
+    border-left: 1px solid  #d7d7d7;
+    border-right: 1px solid  #d7d7d7;
+    color:black;
+    margin-left:270px;
+    display: none;
+    position: relative;
+    width: 400px;
+}
+
+ul.catalog-menu > li:hover > .podcatalog-info{
+    display: block;
+}
+
+.menu-about:hover> .dropdown-menu {
+    display: block;
+    color:black;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 1050;                 
+    border-top: none;  
+    border: 1px solid #d7d7d7;
+    border-top: 2px solid #1E3B87;
+    border-bottom: 2px solid #1E3B87;
+    border-radius: 0;
+    font-size: 100%;
+    overflow: hidden;
+}
+
+.dropdown-menu {
+    color:black;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    font-size: 14px;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;     
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);                   
+}
+
+.production-menu:hover > .dropproduction-menu{
+    display: block;
+    position: absolute;
+    z-index: 1050;    
+    border-top: 2px solid #1E3B87;
+    border-bottom: 2px solid #1E3B87;
+}
+.dropproduction-menu{
+    top: 100%;
+    display: none;
+    color:black;
+    position: absolute;  
+    margin-left:-250px;
+    width:680px;
+    background-color: white;
+    border:  1px solid #dddddd;
+}
+.podmenu-info{
+    padding-left:10px;   
+}
+.dropdown-row-title{
+    font-weight: bold;
+    text-align: center;
+    padding-top: 10px;
+    margin:0px;
+    padding-bottom: 10px;   
+    color:black; 
+    width:100%;
+    border-bottom: 1px solid #dddddd;
+}
+.dropdown-row-title:hover{
+    color: #1E3B87;                     
+}
+.dropdown-row{
+    width: 100%;
+    text-align: center;
+    padding: 8px 10px;
+    color:black ;     
+    font-weight: 300;
+    text-decoration: none;
+}
+.dropdown-row:hover{
+    color: #1E3B87;
+}
+.production-content{
+    padding: 10px;
+    box-sizing:border-box;
+    width:100%;
+    max-height: 450px;   
+}
+.production-block{   
+    margin: 10px;           
+    max-width: 200px;
+    height: 200px;
+}
+.production-image{
+    padding: 5px;
+    border: 1px solid #dddddd;
+}
+.production-text{
+    padding-top:5px;
+    color:black;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 300;
+}
+.production-image:hover{
+    border-color: #1E3B87;
+}
+.production-text:hover{
+    color: #1E3B87;
+}
+
+.podcatalog-info{
+    z-index: 1000;
+    display: none;
+    font-size: 14px !important;
+    max-width: 300px;
+    color: black;    
+    padding-right: 20px;
+    box-sizing: border-box;
+    position: absolute; 
+    background-color: white;
+    border:  1px solid #dddddd;
+}
+.podcatalog-item{
+    width:100%;  
+}
+ul.catalog-menu > li:hover > .podcatalog-info{
+    display: block;
+    color: black !important;
+}
+
+.anketa-block{
+    width: 100%;
+    height: 600px;
+}
+
+.thumbs{
+    width:100%;
+    position:relative;
+}
+.caption {       
+  box-sizing:border-box;
+  height: 25%;
+  padding: 50px 20px 20px 20px;                                                     
+  color: #fff;
+  position: absolute;
+  bottom: 0; 
+  right:0;
+  z-index: 3;
+  text-align: center;
+}
+.thumbs img {
+  display: block;
+  width: 100%; /* ÑˆÐ¸Ñ€Ð¸Ð½Ð° ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ¸ */
+  height: auto; /* Ð²Ñ‹ÑÐ¾Ñ‚Ð° ÐºÐ°Ñ€Ñ‚Ð¸Ð½ÐºÐ¸ */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.thumbs .caption span {
+  display: block;
+  opacity: 0;
+  position: relative;
+  top: 100px;
+  -webkit-transition-property: top, opacity;
+  transition-property: top, opacity;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+}
+
+.thumbs:before {
+  content: '';
+  background: -webkit-linear-gradient(top, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+  background: linear-gradient(to bottom, transparent 0%, rgba(0, 0, 0, 0.7) 100%);
+  width: 48%;
+  height: 30%;  
+  opacity: 0;            
+  position: absolute;
+  top: 70%;
+  right: 0;
+  z-index: 2;
+  -webkit-transition-property: top, opacity;
+  transition-property: top, opacity;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.thumbs .caption .title {
+  line-height: 1;
+  font-weight: normal;
+  font-size: 25px;
+}                                         
+.go .thumbs:before,
+.go .thumbs span, .go .thumbs:before,
+.go .thumbs span {
+  opacity: 1;
+}
+.go .thumbs:before, .go .thumbs:before {
+  top: 70%;
+}
+.go .thumbs span, .go .thumbs span {
+  top: 0;
+}
+.go .thumbs .title, .go .thumbs .title {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.light-gray{
+    background-color: #fafafa;
+}
+
+.press-center{
+    text-align: center;
+    padding: 10px;
+}
+.press-box{
+    margin-bottom: 30px;
+}
+.press-title{
+    padding: 20px;
+    font-size: 34px;
+    font-weight: bold;
+}
+.image-press-block{
+    height: 180px;
+    width: 100%;
+    position: relative;
+}
+.date-press-block{
+    transform: skew(-20deg, 0);
+    padding: 10px 20px 10px 20px;
+    position: absolute;
+    color: white;
+    background: #1e3b87;
+    top:10px;
+    left: -15px;
+}
+.date-back-rotate{
+    transform: skew(20deg, 0);
+}
+.decor-none{
+    text-decoration: none;
+}
+
+.press-block{
+    display: inline-block;
+    width:300px;
+    padding: 23px;
+    margin: 10px;
+}
+.press-block:hover{
+    display: inline-block;
+    width:300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* ÐŸÐ°Ñ€Ð°Ð¼ÐµÑ‚Ñ€Ñ‹ Ñ‚ÐµÐ½Ð¸ */
+}
+.image-press{
+    max-width: 100%;
+    max-height: 180px;
+}
+.title-press-block{
+    color:black;
+    margin-bottom: 10px ;
+}
+.title-press-block:hover{
+    color:black;
+    text-decoration: underline;
+}
+.text-press-block{
+    font-size: 16px;
+    color:black;
+}
+.text-press-block:hover{
+    color:black;
+    text-decoration: underline;
+}
+@media only screen and (min-width: 1201px){
+    .opened-menu ul.catalog-menu{
+        display:block;
+    }
+    .about-block{
+        margin: 10px 10px 10px 60px;
+    }
+    .main .about-block{
+        margin: 10px !important;
+    }
+} 
+
+@media only screen and (max-width: 1200px) and (min-width: 981px) {
+
+    .item-images {
+        max-width: 50%;
+    }
+    .fill-all{
+        width: 70%;
+    }
+    .item-info{
+        max-width: 250px;
+    }
+    .item-info-block {
+        margin: 30px 12px;
+    }
+    .form-back{
+        display: none;
+    }
+    .form-block{
+        max-width: 50%;
+        min-width: 250px;
+    }
+    .cart-button-right {
+        display: none !important;
+    }
+    .cart-button-left {
+        float: none;
+        border-radius: 2px;
+        border: none;
+    }
+    .menu-category-block { 
+        margin-left: 0px;
+    }
+    .menu-box .color-white {
+        padding: 20px 10px;
+        font-size: 11px;
+    }
+    .catalog-content-box{
+        padding-left: 0px;
+    }
+    .line{
+        display: none;
+    }
+    .item-info{
+        padding-left: 15px;
+        margin-left: 51%;
+    }
+}
+
+@media (max-width: 980px) and (min-width: 751px){   
+    
+    .hidden-block{
+        display: block;
+        width: 100%;
+    }
+    
+    .service .item-info-block{
+        width:95%;
+    }
+    .form-block {
+        float: left;
+        width: 100%;
+    }
+    .form-block-inner{
+        width: 50%;
+        min-width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .form-block .actions{
+        width: 50%;
+        min-width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .item-info-block {
+        margin: 30px 12px;
+    }
+    .image-slider-cell{
+        margin-bottom: 5px;
+    }
+    .fill-all{
+        width: 100%;
+    }
+    .item-images{
+        max-width: 50%;
+    }
+    .item-info{
+        padding-left: 15px;
+        margin-left: 51%;
+    }
+
+    .catalog-content-box{
+        padding-left: 0px;
+    }
+    .menu-category-block {
+        margin-left: 0px;
+    }
+    .search-block{
+        width: 90%;
+    }
+    .search-block-left{
+        width: 100%;
+    }
+    .white-head-block{
+        text-align: center;
+    }
+    .menu-box .menu-border-right {
+        --display: none !important;    
+    }
+    .small-display {
+        display: none !important;
+    }
+    .search-cart-block {
+        float: none;
+    }
+    .cart-button-left {
+        border-radius: 2px 0px 0px 2px !important;
+    }
+    .cart-button-left {
+        float: none;
+        border-radius: 2px;
+        border: none;
+    }
+    .form-back{
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 751px){
+    .hidden-block{
+        display: block;
+        width: 100%;
+    }
+    .service .item-info-block{
+        width:95%;
+        margin: 5px;
+    }
+    .form-block {
+        float: left;
+        width: 100%;
+    }
+    .form-block-inner{
+        width: 50%;
+        min-width: 250px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .item-info-block {
+        margin: 30px 12px;
+    }
+    .clear-cart-button{
+        float: left !important;
+    }
+    .item-info-block{
+        margin: 30px 32px;
+    }
+    .image-slider-cell{
+        margin-bottom: 5px;
+    }
+    .item-info{
+        width: 100%;
+        margin-left: 0px;
+        margin-top: 15px;
+        float: left;
+    }
+    .cart-button-left {
+        float: none;
+        border-radius: 2px;
+        border: none;
+    }
+    .form-back{
+        display: none;
+    }
+
+    .catalog-item-info{
+        max-width: 80%;
+    }
+    .catalog-content-box{
+        padding-left: 0px;
+    }
+    .head-info-text{
+        display: none;
+    }
+    .menu-category-block {
+        margin-left: 0px;
+    }
+    .head-logo{
+        margin-left: 20px;
+    }
+    .head-logo-title{
+        width: 50%;
+        font-size: 16px;
+        margin-left: 10px;
+    }
+
+    .search-block{
+        width: 90%;
+    }
+    .search-block-left{
+        width: 100%;
+    }
+    .search-cart-block {
+        float: none;
+    }
+    .menu-border-right {
+        --display: none !important;
+    }
+    .cart-button-right {
+        display: none;
+    }
+    .white-head-block{
+        text-align: center;
+    }
+    .head-logo-block{
+        max-width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .small-display {
+        display: none !important;
+    }
+    .footer {
+        padding: 20px ;
+    }
+
+    .about-partners{
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    .service-title{
+        word-wrap: break-word;
+    }
+    .catalog-item-image{
+        width: 100%;
+    }
+    .catalog-item-info-block{
+        width: 100%;
+    }
+    .catalog-item-title {
+        font-size: 25px;
+    }
+    .banner {
+        display: none;
+    }
+    .image-slider{
+        display: none;
+    }
+
+}
+
+
+.slider {
+    border-left: 4px solid #1e3b87;
+    border-right: 4px solid #1e3b87;
+    border-bottom: 4px solid #1e3b87;
+    height: 300px;
+    overflow: hidden;
+}
+.slide {
+    width: 1212px;
+    float: left;
+}
+.slide_cont_img {
+    float: left;
+    width: 600px;
+    height: 300px;
+}
+.slide_cont_right {
+    float: right;
+    width: 600px;
+}
+.slide_title {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #1e3b87;
+    font-size: 20px;
+    height: 30px;
+}
+.slide_text {
+    margin-top: 20px;
+    height: 200px;
+    text-align: justify;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.slide_href {
+    background: #1e3b87;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-left: 465px;
+    font-size: 16px;
+    font-weight: bold;
+}
+.slider_btns {
+    text-align: center;
+    margin-top: 10px;
+}
+.slider_btn {
+    float: left;
+    width: 40px;
+    height: 20px;
+    background-color: #1e3b87;
+    margin-right: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+}
+
+.slider_partner>a:hover img {
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=100);
+    -moz-opacity: 1;
+    -khtml-opacity: 1;
+    opacity: 1;
+}
+.slider_partner>a img {
+    width: auto;
+    height: 50px;
+    filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+    -moz-opacity: 0.5;
+    -khtml-opacity: 0.5;
+    opacity: 0.5;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.simple-content {
+    margin: 40px 20px 10px 20px;
+    min-height: 300px;
+}
+.simple-content>.title {
+    font-weight: bold;
+    font-size: 30px;
+    color: #1e3b87;
+    margin-bottom: 20px;
+}
+.simple-content>.text {
+    text-align: justify;
+}
+.block_council {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+.council_person {
+    width: 20%;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.wall-header {
+    border-bottom: 1px solid gray;
+}
+.wall-header h1 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-weight: normal;
+}
+@media (min-width: 1450px) {
+    .container {
+        max-width: 1700px;
+    }
+}
+@media (min-width: 1920px) {
+    .container {
+        max-width: 2500px;
+    }
+}
